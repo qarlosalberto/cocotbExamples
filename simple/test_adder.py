@@ -36,6 +36,28 @@ def adder_basic_test(dut):
     else:  # these last two lines are not strictly necessary
         dut._log.info("Ok!")
 
+@cocotb.test()
+def adder_basic2_test(dut):
+    PERIOD = 10
+    clk = dut.clk
+    cocotb.fork(gen_clk(clk, PERIOD))
+
+    """Test for 5 + 10"""
+    yield Timer(20*PERIOD)
+    A = 7
+    B = 7
+
+    dut.A = A
+    dut.B = B
+
+    yield Timer(20*PERIOD)
+    print(dut.test)
+
+    if int(dut.X) != adder_model(A, B):
+        raise TestFailure(
+            "Adder result is incorrect: %s != 14" % str(dut.X))
+    else:  # these last two lines are not strictly necessary
+        dut._log.info("Ok!")
 
 @cocotb.test()
 def adder_random_test(dut):
