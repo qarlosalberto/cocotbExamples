@@ -1,0 +1,7 @@
+*.o
+*.pyc
+*.cf
+build
+sim_build
+transcript
+*.vstf
