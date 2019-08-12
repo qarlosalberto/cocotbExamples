@@ -1,5 +1,5 @@
 TOPLEVEL_LANG=vhdl
-VHDL_SOURCES = $(PWD)/adder.vhd
+VHDL_SOURCES = $(PWD)/../../../hdl/adder.vhd
 TOPLEVEL=adder
 MODULE=test_adder
 TESTCASE=adder_basic_test,adder_basic2_test
