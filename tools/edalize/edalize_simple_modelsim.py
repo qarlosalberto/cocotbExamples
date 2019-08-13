@@ -9,19 +9,19 @@ work_root = 'build'
 
 files = [
   {'name' : os.path.relpath('../../hdl/adder.vhd', work_root),
-   'file_type' : 'vhdlSource'},
+   'file_type' : 'vhdlSource-2008'
+   },
   {'name' : os.path.relpath('../../hdl/adder_tb.vhd', work_root),
-   'file_type' : 'vhdlSource'}
+   'file_type' : 'vhdlSource-2008'
+   }
 ]
 
-tool = 'ghdl'
-tool_options = {'analyze_options' : ['--std=08','-fexplicit','--no-vital-checks','-frelaxed-rules'],
-                'run_options' : ['--disp-time']
-               }
+tool = 'modelsim'
+
 edam = {
   'files'        : files,
-  'name'         : 'test_ghdl',
-  'tool_options' : {tool : tool_options},
+  'name'         : 'test_modelsim',
+  # 'tool_options' : {tool : tool_options},
   'toplevel'     : 'adder_tb'
 }
 
