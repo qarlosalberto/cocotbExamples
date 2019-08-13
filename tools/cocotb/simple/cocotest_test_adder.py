@@ -3,9 +3,6 @@ import pytest
 import os
 
 #SIM=ghdl pytest -s cocotest_test_adder.py
-
-
-
 @pytest.mark.skipif(os.getenv("SIM") == "icarus", reason="VHDL not suported")
 def test_adder_vhdl():
     DATA_WIDTH = 5
