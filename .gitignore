@@ -5,3 +5,5 @@ build
 sim_build
 transcript
 *.vstf
+__pycache__
+.pytest_cache
