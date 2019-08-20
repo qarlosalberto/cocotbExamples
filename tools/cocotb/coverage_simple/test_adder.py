@@ -20,6 +20,7 @@ FIFO_Coverage = coverage_section (
   CoverPoint("top.c", vname="C", bins = [True, False]),
   CoverPoint("top.(A <250)", xf = lambda dut,A,B,C : A<250, bins = [True, False]),
   CoverPoint("top.(A >250)", xf = lambda dut,A,B,C : A>250, bins = [True, False]),
+  CoverPoint("top.(A =250)", xf = lambda dut,A,B,C : A==250, bins = [True, False]),
   CoverCross("top.rwXfull", items = ["top.c", "top.(A <250)"]),
 )
 
