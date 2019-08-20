@@ -5,7 +5,7 @@ use ieee.numeric_std.all;
 
 entity adder is
 generic(
-    DATA_WIDTH : positive := 4);
+    DATA_WIDTH : positive := 20);
 port(
   clk : in  std_logic;
   a   : in  std_logic_vector(DATA_WIDTH-1 downto 0);

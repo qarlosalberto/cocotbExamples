@@ -19,6 +19,10 @@ apt install ghdl
 ```
 pip install cocotb-test
 ```
+- cocotb-coverage
+```
+pip install cocotb-coverage
+```
 
 # Tests tools
 
