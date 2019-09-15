@@ -28,7 +28,7 @@ def adder_basic_test(dut):
     dut.B = B
 
     yield Timer(20*PERIOD)
-    print(dut.test)
+    # print(dut.test)
 
     if int(dut.X) != adder_model(A, B):
         raise TestFailure(
@@ -51,7 +51,7 @@ def adder_basic2_test(dut):
     dut.B = B
 
     yield Timer(20*PERIOD)
-    print(dut.test)
+    # print(dut.test)
 
     if int(dut.X) != adder_model(A, B):
         raise TestFailure(
