@@ -16,7 +16,7 @@ files = [
 
 tool = 'ghdl'
 tool_options = {'analyze_options' : ['-fexplicit','--no-vital-checks','-frelaxed-rules'],
-                'run_options' : ['--disp-time']
+                'run_options' : ['--disp-time','--vcd=func.vcd']
                }
 edam = {
   'files'        : files,
