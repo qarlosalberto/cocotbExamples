@@ -8,8 +8,6 @@ if (os.path.isdir('./build') == True):
 work_root = 'build'
 
 files = [
-  {'name' : os.path.relpath('../../hdl/dump.v', work_root),
-   'file_type' : 'verilogSource-2005'},
   {'name' : os.path.relpath('../../hdl/basic_and.v', work_root),
    'file_type' : 'verilogSource-2005'},
   {'name' : os.path.relpath('../../hdl/basic_and_tb.v', work_root),
