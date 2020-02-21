@@ -29,26 +29,26 @@ pip install cocotb-coverage
 ## cocotb-test
 
 ```
-cd /tools/cocotb/axi; SIM=ghdl pytest -s cocotest_test_axi.py
+cd tools/cocotb/axi; SIM=ghdl pytest -s cocotest_test_axi.py
 
 ```
 ```
-cd /tools/cocotb/simple; SIM=ghdl pytest -s cocotest_test_adder.py
+cd tools/cocotb/simple; SIM=ghdl pytest -s cocotest_test_adder.py
 ```
 
 ## cocotb
 
 ```
-cd /tools/cocotb/axi; make
+cd tools/cocotb/axi; make
 
 ```
 ```
-cd /tools/cocotb/simple; make
+cd tools/cocotb/simple; make
 ```
 
 ## Edalize
 
 ```
-cd /tools/edalize; python edalize_simple_ghdl.py
+cd tools/edalize; python edalize_simple_ghdl.py
 
 ```
