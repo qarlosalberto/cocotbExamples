@@ -6,7 +6,7 @@ import os
 # @pytest.mark.skipif(os.getenv("SIM") == "icarus", reason="VHDL not suported")
 def test_adder_vhdl():
     DATA_WIDTH = 5
-    for i in range(2,DATA_WIDTH):
+    for _ in range(2,DATA_WIDTH):
         run(verilog_sources=["../../../hdl/adder.v"],
             toplevel="adder",
             module="test_adder",
