@@ -43,7 +43,7 @@ def adder_random_test(dut):
     """Test for adding 2 random numbers multiple times"""
     yield Timer(20*PERIOD)
 
-    for i in range(10):
+    for _ in range(10):
         A = random.randint(0, 500)
         B = random.randint(0, 500)
         C = random.randint(0, 1)

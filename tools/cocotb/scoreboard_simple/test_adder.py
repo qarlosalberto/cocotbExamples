@@ -81,7 +81,7 @@ def run_test(dut):
 
     tb = TB(dut)
 
-    for i in range(100):
+    for _ in range(100):
         dut.A = random.randint(0,10)
         dut.B = random.randint(0,10)
 
